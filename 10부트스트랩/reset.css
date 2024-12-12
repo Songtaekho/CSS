@@ -1,0 +1,38 @@
+/* 공통적으로 사용하는 css */
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* 패딩, 보더는 너비에 포함 X */
+}
+
+html, body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    min-width: 350px; /* 최소너비 보정 */
+  }
+
+ul, li , ol, dd, dl {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* 구글, 사파리, 파이어폭스는 기본태그들이 디자인이 조금씩 다른경우가 있습니다. */
+/* 직접 인풋 태그 디자인 */
+/*
+input[type=checkbox], input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+}
+*/

@@ -1,0 +1,29 @@
+*{
+    /* 디자인을 시작할떄 여백을 없애거나
+    태그의 기본 속성들을 지울때 사용을 합니다. */
+    list-style: none;
+}
+
+/* 특정 태그 선택할때는 태그 이름 {}사용후 선언
+태그옆에 ,찍고 다중선택도 가능 */
+b {color: blue;}
+
+strong, small, i{color: red;}
+
+#고유함 {color: yellow;}
+.b1 {color: aqua;}
+
+/* 후손선택자 : class abox 내에있는 모든 p태그 선택 */
+.abox p{color: blueviolet;}
+/* 자손 선택자: class bbox 직계자식중 p 태그만 선택*/
+.bbox>p{color:brown}
+
+/* 기본속성 선택자 (=) 여러개 선택시 , 후 사용*/
+input[type=date],
+input[type=password] {
+    color:red;
+}
+
+a[href=example]{
+    color:violet;
+}

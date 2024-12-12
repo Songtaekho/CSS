@@ -1,0 +1,113 @@
+* {padding: 0; margin: 0;}
+
+ul , li{ list-style: none;}
+a {text-decoration: none; color: #555;}
+
+.logo { position: fixed; left: 0; top: 0;
+    background-color: white; 
+    width: 100%; 
+}
+.logo > .door{text-align: center; margin: 20px 0;}
+.login ul li {
+    display: inline-block;
+}
+.login ul li a {
+    color: gray; text-decoration: none;
+}
+.login > ul > .log {
+    display: block;
+    width: 100px;
+    line-height: 40px;
+    position: absolute; top: 10px; right: 70px;
+}
+
+.login > ul > .reg {
+    display: block;
+    width: 100px;
+    line-height: 40px;
+  
+    position: absolute; top: 10px; right: 0px;
+}
+.icon { text-align: center;
+    position: absolute; top: 30px; left: 30px;
+}
+
+.icon ul li {
+    display: inline-block;
+}
+
+.icon ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.btn {
+   
+    width: 160px;
+    height: 40px;
+    background-image: url(images/social.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.btn > .btn1 {
+    width: 35px;
+    height: 40px;
+    display: block;
+    
+    
+}
+
+.menu {
+    background-color: white; margin-top: 40px;
+    text-align: center;
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    display: block;
+    width: 100px;
+    line-height: 50px;
+    color: black;
+    text-decoration: none;
+}
+.center {
+    border-top: 3px solid red;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    background-image: url(images/bg.jpg);
+    height: 300px;
+    padding: 80px;
+}
+.center > .top {
+    margin: 50px;
+}
+
+.list {
+    background-color: white;
+}
+
+.list > .gnb {
+    text-align: center;
+    border-bottom: 1px dashed #777;
+}
+.list ul {
+    text-align: center;
+}
+.list ul li {
+    display: inline-block;
+    
+}
+.list ul li img {
+    display: block;
+    
+}
+.end{
+    background-color: white;
+    border: 1px solid #ddd;
+}

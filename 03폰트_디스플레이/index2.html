@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text1 {text-align: right;}
+        .text2 {text-align: right;} /* 인라인 태그여서 효과가 없음 */
+    </style>
+
+</head>
+<body>
+
+    <h3>문단을 정렬</h3>
+    
+    <p class="text1">hello.world</p>    
+    <span class="text2">hello.world</span>
+
+
+    <style>/* 수평정렬은 글자나 컨텐츠내용중 기준이 되는것에 적용 */
+        .text3 {
+            border: 1px solid #777;
+        }
+        .text3 img{
+            vertical-align: middle;
+        }
+    </style>
+
+    <h3>수직정렬</h3>
+
+    <p class="text3">
+        안녕하세요
+        <img src="img/css3.png"><!-- 같은 폴더안에 img 참조할때는  img/사용해야함 -->
+    </p>
+
+    <style>  /* 텍스트가 한줄일때 수직 정렬하는 방법 height랑 line-height 값을 똑같이 하면됨 */
+        .text4 {
+            border: 1px solid #777;
+            width:300px;
+            height:300px;
+            line-height: 300px;
+            text-align: center;
+        }
+
+    </style>
+    <h3>꿀팁</h3>
+
+    <p class="text4">안녕하세요</p>
+
+
+</body>
+</html>

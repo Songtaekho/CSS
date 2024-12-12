@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> /* 블록성질의 div 태그를 display inline 으로 인라인 성질로 변경하여 나타냄 
+                inline 성질의 span 태그를 display block 으로 블록 성질로 변경하여 나타냄 */
+        .wrap .inner {
+            border: 1px solid #777;
+            display: inline;
+            width: 100px; /* 인라인 요소는 박스 너비 지정 불가 */
+            height: 100px;
+        }
+
+        .wrap span {
+            display: block;
+        }
+        
+        .box div{
+            display: inline-block; /* 박스 가로배치하되. 블럭 성징을 가지게 함 (박스 크기 지정 가능함) */
+            border: 1px solid #777;
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="wrap">
+            <div class="inner">박스</div>
+            <div class="inner">박스</div>
+            <div class="inner">박스</div>
+            <div class="inner">박스</div>
+    </div>
+
+    <div class="wrap">
+        <span>박스</span>
+        <span>박스</span>
+        <span>박스</span>
+    </div>
+
+    <div class="box">
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+    </div>
+
+    <div class="content" style="display: none;">안보이게하기</div>
+
+<style>
+    ul, li {list-style: none; padding: 0; margin: 0;}
+    .gnb {
+        text-align: center;
+    }
+
+    .gnb > li{
+        display: inline-block; /* 박스 크기 지정가능 */
+    }
+    .gnb >li > a{
+        display: block; 
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 15px;
+        color: black;
+        text-decoration: none; /* 밑줄 삭제 */
+        
+    }
+    .gnb >li >a:hover { /* 메뉴에 마우스 올리면 백그라운드색 나옴 */
+        background-color: #2323;
+    }
+
+</style>
+
+    <ul class="gnb">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+    </ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{padding: 0; margin: 0; list-style: none;}
+    .box{ 
+        width: 80%;
+        border: 1px solid #777;
+        overflow:hidden;
+        margin: 0 auto;
+    }
+    .box > .left{ float: left; width: 50%;}
+    .box > .right{ float: right; width: 50%; overflow: hidden;}
+    .box > .right > .qwe {border: 1px solid #777; padding-bottom: 50px;}
+    .asd {overflow:hidden ; border: 1px solid #777;}
+    .asd >.price{float: left; width: 50%;}
+    .asd >.won{float:right; width: 50%; text-align: end;}
+    .btn > .left {float: left; width: 50%;}
+    .btn > .right{float: right; width: 50%;}
+   
+</style>
+
+<body>
+
+    <h2>과제2</h2>
+
+    <div class="box">
+        <div class="left"><img src="img/bgimg.png" alt="상품사진"></div>
+        <div class="right"> 
+            <div class="qwe">제목 : 패딩바텀 50PX; <br>
+                내용 : ~~~
+            </div>
+            <div class="asd">
+                    <div class="price">가격</div>
+                    <div class="won">10000원</div>
+            </div>
+                
+            <div class="btn">
+                <button class="left">장바구니</button>
+                <button class="right">구매하기</button>
+            </div>
+
+          
+        </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

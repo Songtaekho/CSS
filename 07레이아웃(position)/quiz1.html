@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        
+        
+        
+
+        .logo{text-align: center; margin: 20px auto;}
+
+        body{background-image: url(img/bg.png);}
+
+       
+        .menu {
+            text-align: center;
+            background-color: black;
+            width: 100%;
+            }
+        .menu > li {display: inline-block;}
+        .menu > li >a {
+            display: block;
+            width: 100px;
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .icon {text-align: center; background-color: white;}
+        .icon > li {display: inline-block;}
+        .icon > li >a{
+            display: block;
+            width: 100px;
+            line-height: 50px;
+            text-decoration: none;
+            font-size: 15px;
+            color: black;
+        }
+
+        .out{
+            background-color: white;
+        }
+
+        .out ul{
+            overflow: hidden;
+            width: 960px;
+            margin: 0 auto;
+
+         
+        }
+
+        .out ul li{
+            list-style: none;
+            text-align: center;
+            float: left;
+            width: 25%;    
+        }
+
+        .ipad{
+            width: 700px;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            
+        }
+
+        .ipad > .side > .left{
+            
+            position: absolute;
+            top: 0px;
+            left: -220px;
+        }
+
+        .ipad > .side > .right{
+            position: absolute;
+            top: 0px;
+            right: -220px;
+        }
+
+        .top{
+            position: fixed;
+            background-color: green;
+            top: 40px;
+            right: 40px;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+ 
+
+    </style>
+
+
+
+</head>
+<body>
+    
+        <div class="logo">
+            <img src="img/logo.jpg" alt="이미지">
+        </div>
+
+        <header >
+        <ul class="menu">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </header>
+
+<div class="out">
+    <ul >
+        <li >
+                <img src="img/item01.png" alt="이미지">
+                <p>iPhone(디스플레이 or 플롯)</p>
+        </li>
+        <li >
+                <img src="img/item02.png" alt="이미지">
+                <p>iPod</p>
+        </li>
+        <li >
+                <img src="img/item03.png" alt="이미지">
+                <p>iPad</p>
+        </li>
+        <li >
+                <img src="img/item04.png" alt="이미지">
+                <p>iMac</p>
+        </li>
+    </ul>
+</div>
+
+    <header>
+        <ul class="icon">
+            <li><a href="#">아이콘</a></li>
+            <li><a href="#">아이콘</a></li>
+            <li><a href="#">아이콘</a></li>
+            <li><a href="#">이거는스티키</a></li>
+        </ul>
+    </header>
+
+    <header>
+    <div class="ipad">
+        <img src="img/ipad.jpg" alt="이미지">
+
+        <div class="side">
+            <aside class="left"><img src="img/side01.png">
+                <br>
+                <br>
+                <img src="img/side02.png">
+            </aside>
+            <aside class="right">
+                <img src="img/side03.png">
+                <br>
+                <br>
+                <img src="img/side04.png">
+            </aside>
+        </div>
+    </div>
+
+</header>
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+    
+
+
+       
+
+</body>
+</html>
